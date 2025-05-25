@@ -1,0 +1,328 @@
+
+@media (min-width: 481px) {
+    .PC_view {
+        display: none !important;
+    }
+}
+
+.slick-prev:focus, .slick-next:focus{
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+}
+div.item, .read_more{
+  margin-left:0px;
+}
+/* Головне зображення */
+#central-image {
+  text-align:center;
+  margin-bottom: 10px;
+  margin-top:10px;
+}
+#central-image img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Кнопки фільтра */
+.bttn {
+  padding: 0px ;
+  background-color: lavender;
+  border-radius: 0px;
+  color: black;
+  margin: 2px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.bttn-ml{
+  padding: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4A235A;
+  background: #DCC6E0;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 55px !important;
+  text-align: center;
+  height: 35px !important; 
+  line-height: 35px !important; 
+}
+.bttn.active {
+  background-color: slateblue;
+  color: white;
+}
+.bttn-man{
+ width: 170px; 
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ gap: 5px;
+}
+.bttn-woman{
+ width: 170px; 
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ gap: 5px;
+}
+/* Слайдер */
+/*.my-slick-slider {
+ display:block;
+ position: relative;  
+ margin: 0px;
+ padding: 0px;
+}*/
+.slick-list, .draggable{
+  padding: 0px !important;
+}
+.slick-list{
+  position: relative;
+  justify-content: center;
+  aign-text:center;
+}
+.slick-track{
+  position: relative;
+  justify-content: center;
+  aign-text:center;
+
+}
+.slick-list, .draggable{
+  padding: 0px !important;
+}
+.item {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 0;
+  margin: 0;
+}
+.item img {
+  width: 230px;
+  height: 270px;
+  transition: transform 0.3s, filter 0.3s;
+  margin-left:0px;
+  margin-right:0px;
+}
+/* Контейнер з заголовком */
+.filter-container-title{
+  text-align: center;
+  heigth: auto !Important;
+  width: auto;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+/* Заголовок */
+.filter-container h1 {
+  font-size: 24px;
+  color: #4A235A;
+  background: #DCC6E0;
+  padding: 0px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Контейнер для категорій */
+.filter-categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px; 
+  margin-bottom: 10px;
+}
+
+/* Текст категорій */
+.filter-category {
+  font-size: 20px;
+  font-style: italic;
+  color: #4A235A;
+}
+
+/* Контейнер для кнопок */
+ilter-sizes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Кнопки */
+.filter-bttn {
+  padding: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4A235A;
+  background: #DCC6E0;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 60px;
+  text-align: center;
+  line-height: 40px; /* Вирівнювання тексту */
+}
+.filter-sizes{
+  text-align:center;
+}
+/* Активна кнопка */
+.filter-bttn.active {
+  background: #4A235A;
+  color: white;
+}
+
+/* Ховер ефект */
+.filter-bttn:hover {
+  background: #6C3483;
+  color: white;
+}
+.for-Woman-for-Man{
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.filter-category-woman{
+position: relative;
+left:50px
+}
+
+.tittle-slider{
+  display: flex;
+  position:relative;
+  justify-content: center;
+  gap: 30px;
+  bottom:10px;
+}
+.man-woman-slider{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.woman-ml{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap: 5px;
+}
+
+.man-ml{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap: 5px;
+}
+
+
+
+@media (max-width: 480px) {
+  .filter-bttn {
+    font-size: 14px; /* Зменшення шрифта для дуже малих екранів */
+    padding: 0px;
+  }
+.slick-slide img {
+
+  width: 70px !important;
+  height: 80px !important;
+  padding:0px 5px 0px 5px;
+  margin:auto;
+}
+
+  .filter-container h1 {
+    font-size: 18px; /* Менший заголовок */
+  }
+
+  .tittle-slider {
+    gap: 5px; /* Зменшити відстань між елементами */
+  }
+
+  .my-slick-slider {
+    width: auto;
+  }
+
+  .item img {
+    width: 300px;
+    height: auto;
+  }
+  .item img{
+    width: 100px !important;
+    height: 120px !important;
+    margin: auto;
+    padding: auto; 
+  }
+  .custom-arrow {
+    padding: 15px 15px !important;
+    font-size: 18px !important;
+    cursor: pointer;
+    z-index: 1000;
+}
+  .slick-prev {
+    left: -10px !important;
+    
+}
+
+  .slick-next {
+    right: -10px !important;
+}
+}
+@media (min-width: 480px) and (max-width: 1023px) {
+
+  .item img{
+    width: 120px !important;
+    height: 130px !important;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .item img{
+    width: 160px !important;
+    height: 160px !important;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.custom-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 50%;
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+.slick-track {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.slick-slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+} 
+@media (min-width: 320px) and (max-width: 480px) {
+    .slick-arrow {
+        margin-top: 7px !important;
+    }
+}
